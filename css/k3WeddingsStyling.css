@@ -18,10 +18,15 @@
   src: url(../fonts/HelveticaLTStd-BoldCond_0.otf);
 }
 
+@font-face {
+  font-family: ChristmasWish-Calligraphy;
+  src: url(../fonts/ChristmasWish-Calligraphy.otf);
+}
+
 body{
 	margin:0;
 	padding: 0;
-	background: url('../pictures/carl-revell-WoXTQPBUbPU-unsplash.jpg') no-repeat;
+	background: url('../pictures/couplePic.webp') no-repeat;
 	/* background: url('../pictures/geoffrey-arduini-ea9Zg7HkFXQ-unsplash.jpg') no-repeat; */
 	background-size: cover;
 	background-attachment: fixed;
@@ -39,6 +44,7 @@ body{
 	padding: 20px 0 0 0;
 	width: 80vw;
 	height: 10vh;
+	/* background: white; */
 }
 
 #top .home_logo{
@@ -76,13 +82,9 @@ body{
 
 
 main{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	background: rgba(255,255,255,.2);
+	/* background: rgba(255,255,255,.2); */
 	
-	width: 100vw;
+
 	
 }
 
@@ -113,24 +115,24 @@ main .mobile_logo .img{
 
 
 main h1{
-	font-family: HelveticaLTStd-BoldCond_0;
+	font-family: ChristmasWish-Calligraphy;
 	font-weight: normal;
-	font-size: 4rem;
+	font-size: 7rem;
 	text-align: center;
-	width: 60vw;
-	color: #b5b5b5;
+	color: #e3007b;
+	/* color: #b5b5b5; */
 }
+
+
 
 main .right_msg{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	margin: auto;
-	width: 30vw;
 	
-	padding: 0px;
-	height: 70vh;
+	
+	
 	font-family: Gotham-Book;
 }
 
@@ -138,6 +140,7 @@ main .right_msg p{
 	padding: 20px;
 	text-align: center;
 	font-size: 0.8rem;
+	width: 50vw;
 }
 
 main .right_msg button{
@@ -159,11 +162,13 @@ main .right_msg button:hover{
 footer{
 	display: flex;
 	justify-content: space-between;
-	/* background: blue;  */
+	/* background: blue; */
 	height: 5vh;
 	width: 90vw;
 	padding: 20px 0 0 0;
 	font-family: Gotham-Book;
+	position: fixed;
+	bottom: 0;
 }
 
 footer .footer_left{
@@ -180,7 +185,7 @@ footer i{
 }
 
 footer a{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
@@ -220,7 +225,7 @@ footer p{
 
 	main h1{
 		width: 100vw;
-		font-size: 2rem;
+		font-size: 5rem;
 		height: 10px;
 	}
 
@@ -230,9 +235,15 @@ footer p{
 		height: auto;
 	}
 
+	main .right_msg p{
+		width: 80vw;
+		padding: 40px 0 10px 0;
+	}
+
 	footer{
 		justify-content: center;
-
+		width: 110vw;
+		background: rgba(0,0,0,.5);
 	}
 
 	footer .footer_left{
